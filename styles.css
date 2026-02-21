@@ -4,9 +4,12 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
 }
+body {
+    width: 100%;
+}
 section {
     width: 100%;
-    padding: 60px 25% 0px 25%;
+    padding: 60px 24px 0px 24px;
     background-color: white;
 }
 p {
@@ -50,12 +53,10 @@ figcaption {
     color: #6c6c6d;
 }
 .img1 {
-    position: absolute;
-    right: 6%;
+    display: none;
 }
 .img2 {
-    position: absolute;
-    left: 6%;
+    display: none;
 }
 #second-figure {
     margin-top: -20vh;
@@ -79,8 +80,8 @@ figcaption {
 .acceuil {
     background-image: url(img/IMG_01.JPG);
     background-repeat: no-repeat;
-    background-size: cover;    
-    height: 100vh;
+    background-size: cover; 
+    background-position: calc(50% + 200px) center;    height: 100vh;
     width: 100%;
     padding: 0;
     display: flex;
@@ -95,7 +96,7 @@ figcaption {
     justify-content: flex-start;
     align-items: left;
     padding: 24px 24px 0 24px;
-    margin: 5vh;
+    margin: 0 0 5vh 0;
 }
 .acceuil-title {
     width: 100%;
@@ -106,11 +107,11 @@ figcaption {
     justify-content: center;
 }
 .acceuil-title h1 {
-    font-size: 120px;
+    font-size: 40px;
     text-align: center;
 }
 .acceuil-title h2 {
-    font-size: 28px;
+    font-size: 20px;
     text-align: center;
 }
 .acceuil-infos {
@@ -127,7 +128,8 @@ figcaption {
 }
 
 .publie {
-    padding: 20px 0 0 40px;
+    font-size: 16px;
+    padding: 20px 10px 0 10px;
     color: #6c6c6d;
     background-color: white;
 }
@@ -170,7 +172,7 @@ figcaption {
     padding-bottom: 40px;
 }
 .video video {
-    width: 40%;
+    width: 80%;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
@@ -231,6 +233,7 @@ figcaption {
 }
 .sources li {
     padding-bottom: 8px;
+    overflow-wrap: anywhere;
 }
 .sources p {
     font-size: 18px;
@@ -238,7 +241,7 @@ figcaption {
 .sources-img-container {
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding-top: 80px;
 }
 .sources img {
@@ -246,11 +249,62 @@ figcaption {
 }
 
 @media only screen and (min-width: 1000px) {
-    figure {
+section {
+    width: 100%;
+    padding: 60px 25% 0px 25%;
+    background-color: white;
+}
+.img1 {
+    display: flex;
+    position: absolute;
+    right: 6%;
+}
+.img2 {
+    display: flex;
+    position: absolute;
+    left: 6%;
+}
+
+figure {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 200px; /* Same as img */
+}
+
+
+.acceuil {
+    background-image: url(img/IMG_01.JPG);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+
+.acceuil-title h1 {
+    font-size: 120px;
+}
+.acceuil-title h2 {
+    font-size: 28px;
+}
+.publie {
+    font-size: 20px;
+    padding: 20px 0 0 40px;
+    color: #6c6c6d;
+    background-color: white;
+}
+
+.video video {
+    width: 40%;
+}
+
+.sources-img-container {
+    justify-content: flex-end;
 }
 }
