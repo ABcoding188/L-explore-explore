@@ -1,0 +1,256 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+section {
+    width: 100%;
+    padding: 60px 25% 0px 25%;
+    background-color: white;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #1f1f20;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+h2 {
+    font-size: 28px;
+    padding-bottom: 24px;
+}
+h3 {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.image-text-container {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+    padding-bottom: 20px;
+}
+.image-text {
+    display: block;
+    width: 250px;
+    opacity: 0;
+    transition: opacity 2s ease;
+}
+.image-text.active {
+    opacity: 1;
+}
+figure {
+    display: none;
+}
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+    color: #6c6c6d;
+}
+.img1 {
+    position: absolute;
+    right: 6%;
+}
+.img2 {
+    position: absolute;
+    left: 6%;
+}
+#second-figure {
+    margin-top: -20vh;
+}
+    #second-img {
+        width: 180px;
+    }
+    #fourth-img {
+        width: 180px;
+    }
+#fifth-figure {
+    margin-top: -20vh;
+}
+
+
+
+
+
+
+
+.acceuil {
+    background-image: url(img/IMG_01.JPG);
+    background-repeat: no-repeat;
+    background-size: cover;    
+    height: 100vh;
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+}
+.acceuil-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: left;
+    padding: 24px 24px 0 24px;
+    margin: 5vh;
+}
+.acceuil-title {
+    width: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.acceuil-title h1 {
+    font-size: 120px;
+    text-align: center;
+}
+.acceuil-title h2 {
+    font-size: 28px;
+    text-align: center;
+}
+.acceuil-infos {
+    color: white;
+    font-size: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.acceuil-infos h3 {
+    text-align: center;
+}
+
+.publie {
+    padding: 20px 0 0 40px;
+    color: #6c6c6d;
+    background-color: white;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.perimetre {
+    padding-top: 0px;
+}
+
+.exterieur {
+    padding-top: 20px;
+    padding-bottom: 20vh;
+}
+.exterieur-highlight {
+    color: #6c6c6d;
+    font-weight: bold;
+    font-size: 18px;
+}
+.exterieur-pompes-titre {
+    padding-bottom: 4px;
+    font-weight: bold;
+    color: #6c6c6d;
+}
+.tele-container {
+    padding-bottom: 40px;
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(204, 230, 244);
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+.video video {
+    width: 40%;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
+    -webkit-backdrop-filter: blur(5px);
+    -moz-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+}
+.video button {
+    width: auto;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.play-pause-img {
+    width: 40px;
+}
+.video p {
+    text-align: center;
+    padding-top: 24px;
+}
+
+.interieur {
+    padding-top: 20px;
+}
+.interieur h3 {
+    padding-top: 40px;
+}
+.interieur-donnees-highlight {
+    color: #6c6c6d;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 12px;
+}
+.images-donnees-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#image-donnes-big {
+    width: 600px;
+}
+#fig-longue {
+    width: 600px;
+}
+#image-donnees-small {
+    width: 300px;
+}
+
+
+.sources {
+    padding-bottom: 80px;
+}
+.sources ul {
+    list-style: none;
+}
+.sources li {
+    padding-bottom: 8px;
+}
+.sources p {
+    font-size: 18px;
+}
+.sources-img-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 80px;
+}
+.sources img {
+    width: 300px;
+}
+
+@media only screen and (min-width: 1000px) {
+    figure {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px; /* Same as img */
+}
+}
