@@ -153,6 +153,9 @@ figcaption {
     font-weight: bold;
     font-size: 18px;
 }
+.exterieur-exemples {
+    padding-top: 20px;
+}
 .exterieur-pompes-titre {
     padding-bottom: 4px;
     font-weight: bold;
@@ -163,6 +166,7 @@ figcaption {
 }
 
 .video {
+    height: fit-content;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -173,6 +177,7 @@ figcaption {
 }
 .video video {
     width: 80%;
+    height: fit-content;
     box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.5);
     -webkit-backdrop-filter: blur(5px);
     -moz-backdrop-filter: blur(5px);
